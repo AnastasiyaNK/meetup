@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  max-width: 1464px;
+  padding: 11px 24px;
+  margin: auto;
+}
+.navbar {
+  display: flex;
+}
+.logo {
+  margin-right: 40px;
+}
+.nav-wrapper {
+  display: flex;
+  flex-grow: 1;
+  max-width: 600px;
+  position: relative;
+}
+.search-icon {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 12px;
+  top: 25%;
+}
+.nav-input {
+  border: 1px solid #d9d9d9;
+  border-radius: 8px 0 0 8px;
+  width: 300px;
+  height: 42px;
+  padding-left: 40px;
+
+  flex-grow: 1;
+  min-width: 100px;
+  width: auto;
+  padding-left: 40px;
+}
+.right {
+  border-radius: 0 8px 8px 0;
+}
+.nav-search-btn {
+  border-radius: 0 8px 8px 0;
+  width: 42px;
+  height: 42px;
+  background: #f65858;
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  flex-shrink: 0;
+}
+.search-white-icon {
+  width: 20px;
+  height: 20px;
+}
+.nav-wrapper-right {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  margin-left: auto;
+}
+.language-btn {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+  color: #212121;
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  background: transparent;
+  align-items: center;
+  border: none;
+}
+.login-btn {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #212121;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+.signup-btn {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #fff;
+  border-radius: 8px;
+  background: #00798a;
+  padding: 8px 16px;
+  cursor: pointer;
+  border: none;
+}
+
+
+
+
+  @media (max-width: 768px) {
+    .header {
+  min-width: 728px;
+  padding: 11px 20px;
+  margin: auto;
+}
+     .navbar {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+
+  }
+
+  .nav-wrapper {
+    order: 1; 
+    width: 100%; 
+    margin: 10px auto;
+    
+  }
+  
+ 
+}
+
+ @media (max-width: 392px) {
+    .header {
+  min-width: 364px;
+  padding: 6px 14px;
+  margin: auto;
+}
+    .nav-wrapper-right {
+  gap: 16px;
+ 
+}
+.language-btn {
+
+  font-size: 12px;}
+  
+.login-btn {
+  font-size: 12px;
+  
+}
+.signup-btn {
+  font-size: 12px;
+  border-radius: 7px;
+  background: #00798a;
+  padding: 6px 13px;
+ 
+}
+
+  .nav-wrapper {
+    order: 1; 
+    width: 100%; 
+    margin: 10px auto;
+    
+  }
+  .right {
+  display: none;
+}
+  
+ 
+}
+

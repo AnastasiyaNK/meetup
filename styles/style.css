@@ -40,7 +40,7 @@ h6 {
 
 button,
 input,
-textarea, 
+textarea,
 select {
   border: none;
   outline: none;
@@ -57,7 +57,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
 
 a {
   text-decoration: none;
@@ -118,6 +117,10 @@ body {
   position: absolute;
   right: 0;
   flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+.nav-search-btn:hover{
+  background-color: #f33b3b;
 }
 .search-white-icon {
   width: 20px;
@@ -161,6 +164,7 @@ body {
   padding: 8px 16px;
   cursor: pointer;
   border: none;
+  transition: all 0.3s ease;
 }
 .signup-btn:hover,
 .signup-btn:focus {
@@ -480,11 +484,6 @@ body {
   gap: 24px;
   width: 100%;
 }
-/* .works-wrap{
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-} */
 
 .friendships {
   margin-bottom: 64px;
@@ -509,4 +508,101 @@ body {
   margin-top: 24px;
   margin-bottom: 16px;
   max-width: 326px;
+}
+
+.footer {
+  background: #212121;
+  padding-top: 24px;
+  padding-bottom: 40px;
+}
+.footer-container {
+  max-width: 1150px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.wrap-get-srated {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #fff;
+}
+.footer-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f6f7f8;
+}
+.get-started-btn {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  padding: 10px 14px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+.get-started-btn:hover{
+  background-color: #707070;
+}
+.info-list-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 24px;
+}
+.info-title {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f6f7f8;
+}
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 200px;
+  flex: 1;
+}
+.info-item {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #c5c4c4;
+}
+
+.follow-title {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f6f7f8;
+  margin-top: 24px;
+  
+}
+.follow-link-wrap {
+  display: flex;
+  margin-top: 12px;
+}
+.follow-list {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.link-wrap{
+  margin-left: auto;
+}
+.privacy-list {
+  display: flex;
+  gap:24px;
+  margin-top: 24px;
+}
+.privacy-list .accent{
+  color: #f6f7f8;
+
+}
+.privacy-item {
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #c5c4c4;
 }

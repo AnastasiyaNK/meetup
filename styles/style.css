@@ -132,7 +132,7 @@ body {
   gap: 22px;
   margin-left: auto;
 }
-.language-btn{
+.language-btn {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.4;
@@ -144,10 +144,7 @@ body {
   background: transparent;
   align-items: center;
   border: none;
-
 }
-
-
 
 .arrow-icon {
   width: 12px;
@@ -184,6 +181,7 @@ body {
   max-width: 1222px;
   padding: 0 15px;
   margin: 0 auto;
+
   /* border: 1px solid black; */
 }
 .hero {
@@ -209,17 +207,6 @@ body {
   flex: 1;
 }
 
-/* .hero {
-  display: flex;
-  gap: 54px;
-  margin-top: 70px;
-  margin-bottom: 94px;
-}
-.hero-wrapper {
-  display: flex;
-  flex-direction: column;
-  max-width: 600px;
-} */
 .hero-title {
   font-weight: 700;
   font-size: 42px;
@@ -320,11 +307,9 @@ body {
   margin-bottom: 8px;
 }
 .text {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.42857;
-  color: #707070;
-  margin-bottom: 12px;
+font-size: 16px;
+line-height: 1.5;
+color: #707070;
 }
 .event-additions {
   font-size: 14px;
@@ -448,18 +433,21 @@ body {
 .works {
   margin-bottom: 64px;
 }
-/* .works-icon{
-  width: 40px;
-  height: 250px;
-} */
+
 .list-works {
   display: flex;
   gap: 32px;
 }
+.works-text{
+font-size: 16px;
+line-height: 1.5;
+color: #212121;
+margin-bottom: 16px;
+}
 .item-works {
   background: rgba(151, 202, 209, 0.08);
   border-radius: 8px;
-  padding: 32px  24px;
+  padding: 32px 24px;
   display: flex;
   gap: 24px;
   width: 100%;
@@ -584,6 +572,9 @@ body {
   line-height: 1.42857;
   color: #c5c4c4;
 }
+ .c-meetup{
+  display: none;
+ }
 
 @media (max-width: 768px) {
   .header {
@@ -606,12 +597,10 @@ body {
     width: 14px;
     height: 14px;
   }
-  .language-btn{
-  font-size: 12px;
-  gap: 4px;
-  
-
-}
+  .language-btn {
+    font-size: 12px;
+    gap: 4px;
+  }
 
   .login-btn {
     font-size: 12px;
@@ -627,7 +616,7 @@ body {
     max-width: 590px;
     padding: 0 15px;
     margin: 0 auto;
-    border: 1px solid black;
+   
   }
 
   .hero {
@@ -652,7 +641,7 @@ body {
   .hero-text {
     font-size: 12px;
     line-height: 2;
-    color: #000;
+    font-size: 12px;
     margin-bottom: 0;
   }
 
@@ -671,10 +660,9 @@ body {
   .second-title {
     font-size: 20px;
     line-height: 1.2;
-
   }
-  .event-head-wrapper{
-   margin-bottom: 16px;
+  .event-head-wrapper {
+    margin-bottom: 16px;
   }
   .event-near-btn {
     font-size: 13px;
@@ -770,13 +758,7 @@ body {
     margin-bottom: 12px;
   }
 
-  .join {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 24px 15px;
-  }
-
+ 
   .join-img-desktop-wrap {
     display: none;
   }
@@ -785,10 +767,14 @@ body {
     display: block;
     margin-bottom: 16px;
   }
+  .join-btn{
+   width: 100%;
+  }
 
-  .categoris{
-    margin-bottom: 34px;
-    margin-top: 23px;
+  .categories{
+    margin-top: 48px;
+    margin-bottom: 48px;
+   
   }
 
   .list-categoris {
@@ -800,10 +786,10 @@ body {
     width: calc((100% - 1 * 16px) / 2);
     height: 120px;
   }
-  .populer{
+  .populer {
     margin-bottom: 34px;
   }
- 
+
   .list-popular {
     justify-content: center;
     max-width: 460px;
@@ -817,46 +803,51 @@ body {
     max-width: 190px;
     width: calc((100% - 1 * 16px) / 2);
   }
-  
+
   .subtitle-populer {
     font-size: 18px;
-   
+  }
+  .hidden-img {
+    display: none;
+  }
+  .works {
+    margin-bottom: 34px;
+  }
+  .works-icon{
+  height: 80px;
 }
-.hidden-img{
-  display: none;
-}
-.works {
-  margin-bottom: 34px;
-}
-.list-works{
-  display: flex;
-  flex-direction: column;
-  gap:24px;
-}
-.friendships {
-  margin-bottom: 34px;
-}
-.list-friendships {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-.item-friendships {
-  width:100%;
-}
-.footer-container {
-  max-width: 590px;
+  .item-works {
+  padding: 19px 14px 19px 14px;
   
 }
-.info-list {
-min-width: 0;
-}
-.follow-list {
-  gap: 12px;
-}
+  .list-works {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .friendships {
+    margin-bottom: 34px;
+  }
+  .list-friendships {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .item-friendships {
+    width: 100%;
+  }
+  .footer-container {
+    max-width: 590px;
+  }
+  .info-list {
+    min-width: 0;
+  }
+  .follow-list {
+    gap: 12px;
+  }
 }
 
- @media (max-width: 392px) {
+@media (max-width: 392px) {
   .header {
     max-width: 364px;
     padding: 6px 14px;
@@ -865,13 +856,150 @@ min-width: 0;
   .nav-wrapper-right {
     gap: 8px;
   }
+  .nav-input {
+  border-radius: 0 8px 8px 0;
+
+}
 
   .right {
     display: none;
   }
-
-
+  .main-container {
+    max-width: 364px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  .hero-title {
+    margin-bottom: 20px;
+  }
+  .hero-text {
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 2;
+  }
+  .second-title {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .card-img {
+    width: 97px;
+    height: 64px;
+    margin-bottom: 0;
+  }
+  .subtitle {
+    font-size: 9px;
+    line-height: 1.5;
+  }
+  .text {
+    font-size: 8px;
+    line-height: 1.4;
+  }
+  .event-additions {
+    font-size: 7px;
+    line-height: 1.33333;
+  }
+  .additions-icon {
+    width: 10px;
+    height: 10px;
+  }
+  .item-event-near {
+    gap: 20px;
+    align-items: flex-start;
+    padding: 9px 0;
+  }
+  .join {
+    margin-top: 20px;
+  }
+  .join-title {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 0;
+  }
+  .join-img-tablet{
+    width: 238px;
+  }
+  .join-btn{
+   margin-top: 10px;
+  }
+  .list-categoris {
+    max-width: 293px;
+    margin: auto;
+    margin-top: 24px;
+  }
+  .item-categoris {
+    width: calc((100% - 1 * 24px) / 2);
+    height: 120px;
+  }
+  .threed-title{
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .img-citi{
+    max-width: 153px;
+  }
+  .subtitle-populer{
+    font-size: 14px;
+   line-height: 1.4;
+  }
+  .list-popular {
+ 
+    margin: auto;
+    gap: 17px;
+  }
+  .item-popular {
+    width: calc((100% - 1 * 17px) / 2);
+  }
+  .item-works {
+  padding: 19px 14px 19px 14px;
   
- 
-} 
- 
+}
+.link-all-events{
+  font-size: 10px;
+line-height: 1.4;
+}
+.works-text{
+font-size: 9px;
+line-height: 1.5;
+margin-bottom: 9px;
+}
+.works-icon{
+  height: 60px;
+}
+.hidden-text{
+  display: none;
+}
+.subtitle-friendships{
+  font-size: 16px;
+line-height: 1.6;
+}
+.text{
+font-size: 12px;
+line-height: 1.9;
+color: #707070;
+}
+.list-friendships {
+  gap: 42px;
+}
+    .friendships {
+        margin-bottom: 40px;
+    }
+    .wrap-get-srated{
+      gap: 18px;
+    } 
+    .follow-link-wrap{
+      margin-bottom: 36px;
+    }
+    .link-wrap{
+      display: none;
+    }
+    .privacy-list{
+      display: none;
+    }
+
+    .c-meetup{
+      display: block;
+    font-size: 14px;
+    color: #fff;
+    }
+    
+}

@@ -27,14 +27,7 @@
                 <button class="nav-search-btn"><img class="search-white-icon" src="./assets/icon/search-white.svg" alt=""></button>
             </form>
             <div class="nav-wrapper-right">
-                <div class="language-select-wrapper">
-                <img class="language-icon" src="./assets/icon/language.svg" alt="Language Icon">
-                <select class="language-select">
-                  <option value="en">English</option>
-                  <option value="de">Deutsch</option>
-                </select>
-                <img class="arrow-icon" src="./assets/icon/select.svg" alt="Dropdown Icon">
-                </div>
+                <button class="language-btn"><img class="language-icon" src="./assets/icon/language.svg" alt="Language Icon">English</button>
                 <button class="login-btn">Log in</button>
                  <button class="signup-btn">Sign up</button>
             </div>
@@ -50,6 +43,7 @@
             <div class="">
                 <img src="./assets/icon/irl_event.svg" alt="event">
             </div>
+           
         </section>
         <section class="event-near">
             <div class="event-head-wrapper">
@@ -322,18 +316,18 @@
                     <img class="img-citi" src="./assets/image/nashville.png" alt="Travel and Outdoor">
                     <h4 class="subtitle-populer">Nashville</h4>
                 </li>
-                 <li class="item-popular">
-                    <img class="img-citi delete-img" src="./assets/image/miami.png" alt="Travel and Outdoor">
+                 <li class="item-popular hidden-img">
+                    <img class="img-citi" src="./assets/image/miami.png" alt="Travel and Outdoor">
                     <h4 class="subtitle-populer">Miami</h4>
                 </li>
             </ul>
         </section>
         <section class="works">
-            <h2 class="threed-title">Popular cities on Meetup</h2>   
+            <h2 class="threed-title">How Meetup works</h2>   
             <ul class="list-works">
                 <li class="item-works">
                     <div>
-                    <img  src="./assets/icon/search.svg" alt="search">
+                    <img class="works-icon" src="./assets/icon/search.svg" alt="search">
                     </div>
                     <div class="works-wrap">
                         <h4 class="subtitle">Discover events and groups</h4>
@@ -344,15 +338,16 @@
                 </li>
                  <li class="item-works">
                     <div>
-                    <img  src="./assets/icon/search.svg" alt="search">
+                    <img class="works-icon"  src="./assets/icon/plus.svg" alt="search">
                     </div>
-                    <div>
-                        <h4 class="subtitle">Discover events and groups</h4>
-                        <p class="hero-text">See who's hosting local events for all the things you love</p>
-                        <a class="link-all-events" href="#">Search events and groups</a>
+                    <div class="works-wrap">
+                        <h4 class="subtitle">Start a group to host events</h4>
+                        <p class="hero-text">Create your own Meetup group, and draw from a community of millions</p>
+                        <a class="link-all-events" href="#">Start a group</a>
 
                     </div>
                 </li>
+                
                 
             </ul>
         </section>
@@ -379,6 +374,16 @@
                    <a class="link-all-events" href="#">Read more</a>
                 </li>
             </ul> 
+        </section>
+        <section>
+    <select class="language-select">
+    <option value="en">English</option>
+    <option value="de">Deutsch</option>
+  </select>
+    <select class="language-select">
+    <option value="en">English</option>
+    <option value="de">Deutsch</option>
+  </select>
         </section>
          
     </main>

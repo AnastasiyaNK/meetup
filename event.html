@@ -4,7 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css"
+/>
+    <link rel="stylesheet" href="./styles/event.css">
+   
 </head>
 <body>
     <header class="header">
@@ -28,9 +43,122 @@
     </header>
     <main class="main-container">
     
-        <section class="hero"></section>
+        <section class="filter-even">
+            <div>
+                <h1 class="mein-title">Events near New York, NY</h1>
+                <a class="link-events" href="#">Events</a>
+
+    <div class="filters-wrapper">
+         
+  <select class="js-choice"  id="type-select" name="type">
+    <option value="">Any type</option>
+    <option value="online">Online</option>
+    <option value="offline">Offline</option>
+  </select>
+
+  <select class="js-choice"  id="distance-select" name="distance">
+    <option value="">Any distance</option>
+    <option value="5">5 km</option>
+    <option value="10">10 km</option>
+    <option value="15">15 km</option>
+    <option value="25">25 km</option>
+    <option value="50">50 km</option>
+    <option value="75">75 km</option>
+    <option value="100">100 km</option>
+  </select>
+
+   <select class="js-choice" id="category-select" name="category">
+    <option value="">Any category</option>
+    <option value="social">Social Activities</option>
+    <option value="hobbies">Hobbies and Passions</option>
+    <option value="health">Health and Wellbeing</option>
+    <option value="business">Business</option>
+    <option value="technology">Technology</option>
+  </select>
+         </div>
+</div>
+
+<div class="map-contsiner">
+    <p>Find events near</p>
+    <h2>New York, NY</h2>
+    <img src="./assets/image/сomponent.png" alt="">
+  </div>
+        </section>
+        <section>
+            <ul class="list"></ul>
+        </section>
     </main>
-    <footer></footer>
-    
+     <footer class="footer">
+    <div class="footer-container">
+        <div class="wrap-get-srated">
+             <h3 class="footer-title">Create your own Meetup group.</h3>
+             <button class="get-started-btn">Get Started</button>
+        </div>
+        <div class="info-list-container">
+        
+        <ul class="info-list">
+            <li class="info-item"><h4 class="info-title">Account</h4></li>
+            <li class="info-item">Sign up</li>
+            <li class="info-item">Log in</li>
+            <li class="info-item">Help</li>
+            <li class="info-item">Become an Affiliate</li>
+        </ul>
+         
+        <ul class="info-list">
+            <li class="info-item"><h4  class="info-title">Discover</h4></li>
+            <li class="info-item">Groups</li>
+            <li class="info-item">Calendar</li>
+            <li class="info-item">Cities</li>
+            <li class="info-item">Online Events</li>
+            <li class="info-item">Local Guides</li>
+            <li class="info-item">Make Friends</li>
+        </ul>
+         
+        <ul class="info-list">
+            <li class="info-item"><h4  class="info-title">Meetup</h4></li>
+            <li class="info-item">About</li>
+            <li class="info-item">Blog</li>
+            <li class="info-item">Meetup Pro</li>
+            <li class="info-item">Careers</li>
+            <li class="info-item">Apps</li>
+            <li class="info-item">Podcast</li>
+        </ul>
+        </div>
+       
+       
+            <h4 class="follow-title">Follow us</h4>
+            <div class="follow-link-wrap">
+            <ul class="follow-list">
+                <li class="follow-item"><a href="https://www.facebook.com/"><img src="./assets/icon/facebook.svg" alt="facebook"></a></li>
+                 <li class="follow-item"><a href="https://x.com/twitter"><img src="./assets/icon/twitter.svg" alt="twitter"></a></li>
+                 <li class="follow-item"><a href="https://www.youtube.com/"><img src="./assets/icon/youtube.svg" alt="youtube"></a></li>
+                 <li class="follow-item"><a href="https://www.instagram.com/"><img src="./assets/icon/instagram.svg" alt="instagram"></a></li>
+                  <li class="follow-item"><a href="https://www.tiktok.com/"><img src="./assets/icon/tiktok.svg" alt="tiktok"></a></li>
+            </ul>
+            <div class="link-wrap">
+            <a class="link" href="https://play.google.com/"><img src="./assets/icon/google-play.svg" alt="google-play"></a>
+             <a class="link" href="https://www.apple.com/app-store/"><img src="./assets/icon/app-store.svg" alt="app-store"></a>
+             </div>
+            </div>
+           
+
+       
+            <ul class="privacy-list">
+                <li class="privacy-item accent">© 2024 Meetup</li>
+                 <li class="privacy-item">Terms of Service</li>
+                 <li class="privacy-item">Privacy Policy</li>
+                 <li class="privacy-item">Do Not Sell or Share My Personal Data</li>
+                 <li class="privacy-item">Cookie Policy</li>
+                 <li class="privacy-item">Help</li>
+            </ul>
+            <span class="c-meetup">© 2024 Meetup</span>
+       
+         </div>
+      
+    </footer>
+  
+<script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+<script src="./scripts/event.js"></script>
+
 </body>
 </html>

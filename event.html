@@ -49,38 +49,43 @@
                 <a class="link-events" href="#">Events</a>
 
     <div class="filters-wrapper">
-         
-  <select class="js-choice"  id="type-select" name="type">
+        
+  <div class="filter">   
+  <select class="type"  id="type-select" name="type" style="width: 118px">
     <option value="">Any type</option>
     <option value="online">Online</option>
     <option value="offline">Offline</option>
   </select>
+  </div>   
+   <div class="filter">
 
-  <select class="js-choice"  id="distance-select" name="distance">
-    <option value="">Any distance</option>
-    <option value="5">5 km</option>
-    <option value="10">10 km</option>
-    <option value="15">15 km</option>
-    <option value="25">25 km</option>
-    <option value="50">50 km</option>
-    <option value="75">75 km</option>
-    <option value="100">100 km</option>
-  </select>
+  <select class="distance" id="distance-select" name="distance" style="width: 145px">
+  <option value="">Any distance</option>
+  <option value="0-10">0–10 km</option>
+  <option value="10-25">10–25 km</option>
+  <option value="25-50">25–50 km</option>
+  <option value="50-100">50–100 km</option>
+  <option value="100+">100+ km</option>
+</select>
+</div> 
+<div class="filter">
 
-   <select class="js-choice" id="category-select" name="category">
-    <option value="">Any category</option>
-    <option value="social">Social Activities</option>
-    <option value="hobbies">Hobbies and Passions</option>
-    <option value="health">Health and Wellbeing</option>
-    <option value="business">Business</option>
-    <option value="technology">Technology</option>
-  </select>
+  <select class="category" id="category-select" name="category" style="width: 148px">
+  <option value="">Any category</option>
+  <option value="Social Activities">Social Activities</option>
+  <option value="Hobbies and Passions">Hobbies and Passions</option>
+  <option value="Health and Wellbeing">Health and Wellbeing</option>
+  <option value="Business">Business</option>
+  <option value="Technology">Technology</option>
+</select>
+</div>
+  
          </div>
 </div>
 
 <div class="map-contsiner">
-    <p>Find events near</p>
-    <h2>New York, NY</h2>
+    <p class="map-text">Find events near</p>
+    <h2 class="second-title">New York, NY</h2>
     <img src="./assets/image/сomponent.png" alt="">
   </div>
         </section>
@@ -157,7 +162,6 @@
       
     </footer>
   
-<script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
 <script src="./scripts/event.js"></script>
 
 </body>

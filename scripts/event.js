@@ -1,7 +1,4 @@
-// const element = document.querySelector(".js-choice");
-// const choices = new Choices(element, {
-//   searchEnabled: false,
-// });
+
 
 const eventsStore = [
   {
@@ -71,10 +68,15 @@ const eventsStore = [
   },
 ];
 
-
+const categorySelect = document.getElementById("category-select");
+const distanceSelect = document.getElementById("distance-select");
+const typeSelect = document.getElementById("type-select");
 
 document.addEventListener("DOMContentLoaded", () => {
   renderEvents(eventsStore);
+  categorySelect.addEventListener("change", applyFilters);
+  distanceSelect.addEventListener("change", applyFilters);
+  typeSelect.addEventListener("change", applyFilters);
 });
 
 function formatDate(dateObj) {
@@ -87,10 +89,49 @@ function formatDate(dateObj) {
   };
   return dateObj.toLocaleString("en-US", options);
 }
+function applyFilters() {
+  const selectedCategory = categorySelect.value;
+  const selectedType = typeSelect.value;
+  const selectedDistance = distanceSelect.value;
+
+  let minDistance = 0;
+  let maxDistance = Infinity;
+
+  if (selectedDistance.includes("-")) {
+    [minDistance, maxDistance] = selectedDistance.split("-").map(Number);
+  } else if (selectedDistance === "100+") {
+    minDistance = 100;
+    maxDistance = Infinity;
+  }
+
+  const filteredEvents = eventsStore.filter((event) => {
+    const matchesCategory =
+      !selectedCategory ||
+      event.category.toLowerCase() === selectedCategory.toLowerCase();
+
+    const matchesType = !selectedType || event.type === selectedType;
+
+    const matchesDistance =
+      selectedDistance === "" || event.distance === undefined
+        ? true
+        : event.distance >= minDistance && event.distance <= maxDistance;
+
+    return matchesCategory && matchesType && matchesDistance;
+  });
+
+  renderEvents(filteredEvents);
+}
 
 function renderEvents(events) {
   const container = document.querySelector(".list");
   container.innerHTML = "";
+
+  if (events.length === 0) {
+    container.innerHTML = `
+      <p class="no-results">No events found for the specified filters.</p>
+    `;
+    return;
+  }
 
   events.forEach((event) => {
     const item = document.createElement("li");
@@ -100,8 +141,8 @@ function renderEvents(events) {
     <img class="card-img" src="${event.image}" alt="${event.title}">
     <div class="event-content">
         <p class="data">${formatDate(event.date)}</p>
-        <h4 class="subtitle">Day Trading Idea and Strategy</h4>
-        <p class="text">Business <span>(${event.distance} km)</span></p>
+        <h4 class="subtitle">${event.title}</h4>
+        <p class="text">${event.category}<span>(${event.distance} km)</span></p>
         <div class="attet-wrap">
         <p class="text">${event.attendees ?? "N/A"} attendees</p>
         </div>                
@@ -111,4 +152,3 @@ function renderEvents(events) {
     container.appendChild(item);
   });
 }
-

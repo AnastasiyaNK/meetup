@@ -1,3 +1,26 @@
+:root {
+  --color-white: #ffffff;
+  --color-black: #212121;
+  --color-dark-black: #000;
+  --color-grey: #f2f2f2;
+  --color-light-grey: #efebeb;
+  --color-dark-grey: #333;
+  --color-accent: #f64060;
+  --color-second-accent: #00798a;
+  --color-btn-search: #f33b3b;
+  --color-light-accent: #f65858;
+  --color-data: #7c6f50;
+  --color-border: #ccc;
+  --color-text:#707070;
+  --color-text-dark:#444;
+  --color-text-light:#666;
+  --color-text-footer: #f6f7f8;
+  --color-info-footer:#c5c4c4;
+ 
+}
+
+
+
 *,
 *::before,
 *::after {
@@ -92,7 +115,7 @@ body {
   top: 25%;
 }
 .nav-input {
-  border: 1px solid #d9d9d9;
+  border: 1px solid var(--color-light-grey);
   border-radius: 8px 0 0 8px;
   width: 300px;
   height: 42px;
@@ -110,7 +133,7 @@ body {
   border-radius: 0 8px 8px 0;
   width: 42px;
   height: 42px;
-  background: #f65858;
+  background: var(--color-light-accent);
   cursor: pointer;
   border: none;
   padding: 10px;
@@ -120,7 +143,7 @@ body {
   transition: all 0.3s ease;
 }
 .nav-search-btn:hover {
-  background-color: #f33b3b;
+  background-color: var(--color-btn-search);
 }
 .search-white-icon {
   width: 20px;
@@ -137,7 +160,7 @@ body {
   font-size: 14px;
   line-height: 1.4;
   text-align: center;
-  color: #212121;
+  color: var(--color-black);
   cursor: pointer;
   display: flex;
   gap: 8px;
@@ -155,7 +178,7 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.4;
-  color: #212121;
+  color: var(--color-black);
   cursor: pointer;
   border: none;
   background: transparent;
@@ -164,9 +187,9 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.42857;
-  color: #fff;
+  color: var(--color-white);
   border-radius: 8px;
-  background: #00798a;
+  background: var(--color-second-accent);
   padding: 8px 16px;
   cursor: pointer;
   border: none;
@@ -174,7 +197,7 @@ body {
 }
 .signup-btn:hover,
 .signup-btn:focus {
-  background: #f65858;
+ background: var(--color-light-accent);
 }
 
 .main-container {
@@ -182,7 +205,6 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 
-  /* border: 1px solid black; */
 }
 .hero {
   display: flex;
@@ -211,18 +233,18 @@ body {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.2;
-  color: #212121;
+  color: var(--color-black);
   margin-bottom: 24px;
 }
 .hero-text {
   font-size: 16px;
   line-height: 1.5;
-  color: #212121;
+  color: var(--color-black);
   margin-bottom: 24px;
 }
 .hero-link-wrap {
   border-radius: 8px;
-  background: #00798a;
+  background: var(--color-second-accent);
   padding: 8px 16px;
   display: flex;
   justify-content: center;
@@ -233,11 +255,11 @@ body {
 .hero-link {
   font-size: 16px;
   line-height: 1.5;
-  color: #fff;
+  color: var(--color-white);
 }
 .hero-link-wrap:hover,
 .hero-link-wrap:focus {
-  background: #f65858;
+  background: var(--color-light-accent);
 }
 
 .event-near {
@@ -257,7 +279,7 @@ body {
   font-weight: 600;
   font-size: 28px;
   line-height: 1.2;
-  color: #212121;
+ color: var(--color-black);
 }
 .event-near-btn {
   display: flex;
@@ -267,7 +289,7 @@ body {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
-  color: #00798a;
+  color: var(--color-second-accent);
   background: rgba(151, 202, 209, 0.12);
   border-radius: 8px;
   cursor: pointer;
@@ -277,12 +299,12 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  color: #00798a;
+  color: var(--color-second-accent);
   transition: all 0.3s ease;
 }
 .link-all-events:hover,
 .link-all-events:active {
-  color: #f65858;
+  color: var(--color-light-accent);
 }
 .list-event-near {
   list-style: none;
@@ -303,20 +325,20 @@ body {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
-  color: #212121;
+  color: var(--color-black);
   margin-bottom: 8px;
 }
 .text {
 font-size: 16px;
 line-height: 1.5;
-color: #707070;
+color: var(--color-text);
 }
 .event-additions {
   font-size: 14px;
   line-height: 1.42857;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--color-black);
 }
 .icons-wrapper {
   display: flex;
@@ -347,7 +369,7 @@ color: #707070;
   font-weight: 600;
   font-size: 28px;
   line-height: 1.2;
-  color: #212121;
+  color: var(--color-black);
   margin-bottom: 16px;
 }
 
@@ -363,9 +385,9 @@ color: #707070;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  color: #fff;
+  color: var(--color-white);
   padding: 8px;
-  background: #e32359;
+  background: var(--color-accent);
   border-radius: 8px;
   cursor: pointer;
   border: none;
@@ -407,7 +429,7 @@ color: #707070;
   font-weight: 600;
   font-size: 28px;
   line-height: 1.28571;
-  color: #212121;
+  color: var(--color-black);
 }
 
 .list-popular {
@@ -426,7 +448,7 @@ color: #707070;
   font-size: 20px;
   line-height: 1.4;
   text-align: center;
-  color: #212121;
+  color: var(--color-black);
   text-align: center;
 }
 
@@ -441,7 +463,7 @@ color: #707070;
 .works-text{
 font-size: 16px;
 line-height: 1.5;
-color: #212121;
+color: var(--color-black);
 margin-bottom: 16px;
 }
 .item-works {
@@ -472,14 +494,14 @@ margin-bottom: 16px;
   font-weight: 600;
   font-size: 18px;
   line-height: 1.5;
-  color: #212121;
+  color: var(--color-black);
   margin-top: 24px;
   margin-bottom: 16px;
   max-width: 326px;
 }
 
 .footer {
-  background: #212121;
+  background: var(--color-black);
   padding-top: 24px;
   padding-bottom: 40px;
 }
@@ -493,20 +515,20 @@ margin-bottom: 16px;
   align-items: center;
   gap: 30px;
   padding-bottom: 25px;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid var(--color-white);
 }
 .footer-title {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
-  color: #f6f7f8;
+  color: var(--color-text-footer);
 }
 .get-started-btn {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
-  color: #fff;
-  border: 2px solid #fff;
+  color: var(--color-white);
+  border: 2px solid var(--color-white);
   border-radius: 6px;
   padding: 10px 14px;
   cursor: pointer;
@@ -514,7 +536,7 @@ margin-bottom: 16px;
   transition: all 0.3s ease;
 }
 .get-started-btn:hover {
-  background-color: #707070;
+  background-color: var(--color-text);
 }
 .info-list-container {
   display: flex;
@@ -526,7 +548,7 @@ margin-bottom: 16px;
 .info-title {
   font-size: 16px;
   line-height: 1.5;
-  color: #f6f7f8;
+  color: var(--color-text-footer);
 }
 .info-list {
   display: flex;
@@ -538,13 +560,13 @@ margin-bottom: 16px;
 .info-item {
   font-size: 14px;
   line-height: 1.4;
-  color: #c5c4c4;
+  color: var(--color-info-footer);
 }
 
 .follow-title {
   font-size: 16px;
   line-height: 1.5;
-  color: #f6f7f8;
+  color: var(--color-text-footer);
   margin-top: 24px;
 }
 .follow-link-wrap {
@@ -565,12 +587,12 @@ margin-bottom: 16px;
   margin-top: 24px;
 }
 .privacy-list .accent {
-  color: #f6f7f8;
+  color: var(--color-text-footer);
 }
 .privacy-item {
   font-size: 14px;
   line-height: 1.42857;
-  color: #c5c4c4;
+  color: var(--color-info-footer);
 }
  .c-meetup{
   display: none;
@@ -635,7 +657,7 @@ margin-bottom: 16px;
   .hero-title {
     font-size: 25px;
     line-height: 1.22;
-    color: #212121;
+    color: var(--color-black);
   }
 
   .hero-text {
@@ -680,7 +702,7 @@ margin-bottom: 16px;
     gap: 20px;
     align-items: flex-start;
     padding: 16px 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid var(--color-border);
     height: auto;
   }
 
@@ -703,13 +725,13 @@ margin-bottom: 16px;
   .subtitle {
     font-size: 16px;
     font-weight: 600;
-    color: #212121;
+    color: var(--color-black);
     margin-bottom: 4px;
   }
 
   .text {
     font-size: 14px;
-    color: #666;
+    color: var(--color-text-light);
     margin-bottom: 4px;
   }
 
@@ -722,7 +744,7 @@ margin-bottom: 16px;
 
   .event-additions {
     font-size: 13px;
-    color: #444;
+    color: var(--color-text-dark);
     line-height: 1.4;
   }
 
@@ -975,7 +997,7 @@ line-height: 1.6;
 .text{
 font-size: 12px;
 line-height: 1.9;
-color: #707070;
+color: var(--color-text);
 }
 .list-friendships {
   gap: 42px;
@@ -999,7 +1021,7 @@ color: #707070;
     .c-meetup{
       display: block;
     font-size: 14px;
-    color: #fff;
+    color: var(--color-white);
     }
     
 }

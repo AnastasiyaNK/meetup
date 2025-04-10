@@ -1,5 +1,3 @@
-
-
 const eventsStore = [
   {
     title: "INFJ Personality Type - Coffee Shop Meet & Greet",
@@ -143,9 +141,8 @@ function renderEvents(events) {
         <p class="data">${formatDate(event.date)}</p>
         <h4 class="subtitle">${event.title}</h4>
         <p class="text">${event.category}<span>(${event.distance} km)</span></p>
-        <div class="attet-wrap">
         <p class="text">${event.attendees ?? "N/A"} attendees</p>
-        </div>                
+                       
     </div>
     `;
 
